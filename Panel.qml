@@ -242,7 +242,7 @@ Item {
     confirmClear = false
     testControlsVisible = false
     pairNumberText = ""
-    feedback = "Enter the exact number shown in the iPhone app."
+    feedback = "Enter the exact number shown in the /call-me app."
   }
 
   function pairNumber() {
@@ -618,7 +618,7 @@ Item {
                   Layout.fillWidth: true; wrapMode: Text.WordWrap
                 }
                 Text {
-                  text: root.paired ? root.numberDisplay : "Install callme on your iPhone, then enter the 10-digit number from the app."
+                  text: root.paired ? root.numberDisplay : "Install /call-me on your phone, then enter the 10-digit number from the app."
                   color: Color.foreground; opacity: 0.7
                   font.family: Style.font.family; font.pixelSize: Style.font.bodySmall
                   Layout.fillWidth: true; wrapMode: Text.WordWrap
@@ -633,6 +633,13 @@ Item {
               text: "Get the iPhone app"
               Layout.fillWidth: true
               onClicked: Quickshell.execDetached(["xdg-open", "https://apps.apple.com/app/id6789575165"])
+            }
+            Button {
+              focusable: true;
+              visible: !root.paired
+              text: "Get the Android app"
+              Layout.fillWidth: true
+              onClicked: Quickshell.execDetached(["xdg-open", "https://callmemcp.com/go/play-omarchy"])
             }
             ColumnLayout {
               visible: !root.paired || root.pairingMode

@@ -1,7 +1,7 @@
 # /call-me for Omarchy
 
 One-time setup panel for connecting the [/call-me](https://github.com/radres/call-me)
-iPhone app to your AI agents. Your agent rings your actual phone, speaks its
+phone app (iPhone or Android) to your AI agents. Your agent rings your actual phone, speaks its
 question, and gets your spoken answer back as text.
 
 This repository holds only the Omarchy plugin: the Quickshell panel, a launcher
@@ -21,8 +21,8 @@ skill live in [radres/call-me](https://github.com/radres/call-me).
 ## Requirements
 
 - Omarchy with `omarchy-shell` (Quickshell panels).
-- [/call-me on the App Store](https://serdaroztetik.com/aiphone/go/readme),
-  paired once on the phone. No account, no email.
+- /call-me from the [App Store](https://callmemcp.com/go/readme) or
+  [Google Play](https://callmemcp.com/go/play-omarchy), paired once on the phone. No account, no email.
 - `curl` and `jq` on the machine. The panel shells out to both.
 
 ## Install
